@@ -1,0 +1,10 @@
+<div>
+  <strong>Product name:</strong>
+  <%= order.product_name %>
+  <strong>Product count:</strong>
+  <%= order.product_count %>
+  <div class="order-admin">
+    <%= link_to 'Edit', edit_order_path(order) %> |
+    <%= link_to "Delete", [order], method: :delete %>
+  </div>
+</div>
